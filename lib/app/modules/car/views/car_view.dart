@@ -16,9 +16,31 @@ class CarView extends GetView<CarController> {
         centerTitle: true,
       ),
       body: Center(
-        child: Text(
-          controller.car.price.toString(),
-          style: const TextStyle(fontSize: 20),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+            'цена: ${controller.car.price.toString()}\$',
+            style: const TextStyle(fontSize: 32, fontWeight: FontWeight.w900, color: Color.fromRGBO(221, 160, 221, 1)),
+          ),
+          const SizedBox(height: 16,),
+          Text(
+            'модель: ${controller.car.model}',
+            style: const TextStyle(
+                fontSize: 24),
+          ),
+          Text(
+            'Год: ${controller.car.year}',
+            style: const TextStyle(
+                fontSize: 24),
+          ),
+          Text(
+            'цвет: ${controller.car.color}',
+            style: const TextStyle(
+              fontSize: 24
+            ),
+          ),
+          ],
         ),
       ),
     );

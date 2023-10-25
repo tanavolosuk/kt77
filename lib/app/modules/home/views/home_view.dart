@@ -71,7 +71,7 @@ class HomeView extends GetView<HomeController> {
                                   fontSize: 16, fontWeight: FontWeight.w500),
                             ),
                             subtitle:
-                                Text("price: ${necCar.price.toString()}\$"),
+                                Text("цена: ${necCar.price.toString()}\$"),
                             trailing: Column(
                               children: [
                                 if (necCar.availability)

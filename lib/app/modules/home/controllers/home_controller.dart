@@ -31,9 +31,7 @@ class HomeController extends GetxController {
       status.value = StatusData.error;
       return;
     }
-    else {
     status.value = StatusData.success;
-    }
     var responseData = CarsData.fromJson(response.data);
     carList.value = responseData.cars;
   }
